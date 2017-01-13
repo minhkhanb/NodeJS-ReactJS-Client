@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.addUser {
+    border: 1px solid #cccfff;
+    width: 360px;
+    margin: 0 auto;
+    padding: 15px 15px;
+}
+.title {
+    font-weight: 700;
+    text-align: center;
+    padding: 5px 10px;
+}
+.title span {
+    font-size: 20px;
+}
+table {
+    border: 1px solid darkslategrey;
+    width: 100%;
+}
+table td {
+    border: 1px solid darkslategrey;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+table th {
+    font-size: 15px;
+}
+table td.action {
+    text-align: center;
+}
+.form {
+    margin-bottom: 15px;
+}
+td button {
+    display: inline-block;
+    margin: 5px;
+}
+.label {
+    margin-bottom: 5px;
+}
+.control-group {
+    margin-bottom: 10px;
+}
+.input input {
+    text-align: left;
+    padding: 5px 15px;
+}
