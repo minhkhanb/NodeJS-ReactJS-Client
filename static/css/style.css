@@ -3,7 +3,7 @@ body {
 }
 .addUser {
     border: 1px solid #cccfff;
-    width: 360px;
+    width: 560px;
     margin: 0 auto;
     padding: 15px 15px;
 }
@@ -46,4 +46,11 @@ td button {
 .input input {
     text-align: left;
     padding: 5px 15px;
+}
+table input {
+    display: block;
+    width: 100%;
+}
+table td.action {
+    width: 125px;
 }

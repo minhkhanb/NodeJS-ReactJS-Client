@@ -3,6 +3,7 @@ var app = express();
 var bodyParser = require('body-parser');
 var parser = bodyParser.urlencoded({extended: false});
 
+let userStorage = [];
 
 app.set('view engine', 'ejs');
 
@@ -17,8 +18,23 @@ app.get('/save', function (req, res) {
 });
 
 app.post('/addUser', parser, function (req, res) {
-    console.log(req.body);
-    res.send('save user');
+    userStorage.push(req.body);
+    res.send(userStorage);
+});
+
+app.post('/updateUser', parser, function (req, res) {
+    var id = req.body.idEdit;
+    userStorage[id] = {
+        name: req.body.name,
+        age: req.body.age,
+        skill: req.body.skill
+    };
+    res.send(userStorage);
+});
+
+app.post('/deleteUser', parser, function (req, res) {
+    userStorage.splice(req.body.idDelete, 1);
+    res.send(userStorage);
 });
 
 
